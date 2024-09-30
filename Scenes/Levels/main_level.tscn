@@ -1,12 +1,14 @@
-[gd_scene load_steps=63 format=3 uid="uid://bmdtevyk4bx1i"]
+[gd_scene load_steps=65 format=3 uid="uid://bmdtevyk4bx1i"]
 
 [ext_resource type="Script" path="res://Scriptes/Player/Player.gd" id="1_51c8j"]
 [ext_resource type="Texture2D" uid="uid://xne17bxue4m7" path="res://Assets/Base Character - Premium/basic/idle.png" id="2_hinsy"]
 [ext_resource type="Texture2D" uid="uid://cdn3pmhsrrmri" path="res://Assets/Base Character - Premium/basic/jump.png" id="3_y5eeq"]
 [ext_resource type="Texture2D" uid="uid://b8finbyk3162n" path="res://Assets/Base Character - Premium/attack/sword.png" id="4_eu13p"]
 [ext_resource type="Texture2D" uid="uid://s6ylhl3c2sra" path="res://Assets/Base Character - Premium/basic/walk.png" id="5_e6iy1"]
+[ext_resource type="Texture2D" uid="uid://cuyblriic8ov4" path="res://Assets/db59w7n-446f642b-063c-45e0-b4fc-57053ffa9417.png" id="6_2lrxm"]
 [ext_resource type="Script" path="res://Scriptes/GUI/camera.gd" id="6_lommk"]
 [ext_resource type="Texture2D" uid="uid://sf5c8edyv537" path="res://Assets/Hana Caraka Cozy Island - Premium/Tilesets/Summer/water.png" id="7_5ipi0"]
+[ext_resource type="Texture2D" uid="uid://wxs0wr3fcvgj" path="res://Assets/Hana Caraka Animals - Premium/Cow/Cow 1/Cow 1 right.png" id="7_rcy5o"]
 [ext_resource type="PackedScene" uid="uid://mn3ra0wi4l0j" path="res://Scenes/Detectable/tree.tscn" id="9_w4jww"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37ltf"]
@@ -809,6 +811,20 @@ collision_mask = 4
 position = Vector2(-1, 0.125)
 shape = SubResource("RectangleShape2D_8j245")
 debug_color = Color(0.914268, 0.225382, 0.471294, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(4.5, 39.5)
+scale = Vector2(0.385714, 0.385714)
+texture = ExtResource("6_2lrxm")
+hframes = 12
+vframes = 8
+frame = 73
+
+[node name="Sprite2D2" type="Sprite2D" parent="Player"]
+position = Vector2(35, 34)
+texture = ExtResource("7_rcy5o")
+hframes = 6
+vframes = 5
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap", "player")]
 zoom = Vector2(4, 4)
